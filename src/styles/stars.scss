@@ -17,9 +17,12 @@
     }
   }
 
+  
   @for $i from 1 through $max-stars {
-    &--#{$i} .stars__star:nth-child(-n + #{$i}) {
-      background-image: url(#{$star-active});
+    &--#{$i} {
+      .stars__star:nth-child(-n + #{$i}) {
+        background-image: url(#{$star-active});
+      }
     }
   }
 }

@@ -1,9 +1,9 @@
 @import 'variables';
 
 .card {
-  width: 200px;
+  width: $card-width;
   background-color: $color-white;
-  border: 1px solid $color-border;
+  border: $border-width solid $color-border;
   border-radius: $border-radius;
   padding: $card-padding-top $card-padding-horizontal $card-padding-bottom;
 
@@ -20,7 +20,7 @@
   }
 
   &__title {
-    margin: 0 0 4px;
+    margin: $card-title-margin-bottom;
     color: $color-text-main;
     line-height: $line-height-title;
     font-weight: 500;
@@ -28,7 +28,7 @@
   }
 
   &__code {
-    margin: 0 0 16px;
+    margin: $card-code-margin-bottom;
     font-weight: 400;
     line-height: $line-height-code;
     font-size: $font-size-code;
@@ -39,7 +39,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: $card-rating-margin-bottom;
   }
 
   &__reviews {
